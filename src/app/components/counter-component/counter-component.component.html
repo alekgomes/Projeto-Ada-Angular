@@ -1,0 +1,14 @@
+<div>
+  <!-- Exibe a data atual formatada -->
+  <p>Hoje: {{ hoje }}</p>
+
+  <!-- Exibe o valor formatado como moeda BRL -->
+  <p>Valor: {{ valor }}</p>
+
+  <!-- Exibe a mensagem -->
+  <p>{{ mensagem }}</p>
+
+  <!-- Botões de controle -->
+  <button (click)="incrementar()" [disabled]="valor >= 10">Incrementar</button>
+  <button (click)="decrementar()" [disabled]="valor <= 0">Decrementar</button>
+</div>
