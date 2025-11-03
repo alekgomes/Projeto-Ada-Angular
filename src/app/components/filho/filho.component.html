@@ -1,0 +1,9 @@
+<h3>Componente Filho</h3>
+
+<!-- Exibe o valor recebido do pai -->
+<p>Valor recebido do pai: {{ dadoRecebido }}</p>
+
+<!-- Botão que emite o valor +1 para o pai -->
+<button (click)="emitirValorParaPai()" [disabled]="botaoDesabilitado">
+  Enviar valor +1 para o pai
+</button>

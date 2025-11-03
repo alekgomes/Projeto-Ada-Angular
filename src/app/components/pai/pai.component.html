@@ -1,0 +1,10 @@
+<h2>Componente Pai</h2>
+
+<!-- Envia dadoParaFilho para o filho e escuta o evento dadoEnviado -->
+<app-filho [dadoRecebido]="dadoParaFilho" (dadoEnviado)="receberDado($event)">
+</app-filho>
+
+<h3>Valores recebidos do filho:</h3>
+<ul>
+  <li *ngFor="let valor of valoresRecebidos">{{ valor }}</li>
+</ul>
